@@ -12,7 +12,7 @@ import java.net.http.HttpResponse;
 
 public class ConsultaGemini {
 
-    private static final String apiKey = "AIzaSyDBm5sZ9ELfMwi35c3BvJ05AbscN-3YNW8";
+    private static final String apiKey = "GEMINI_API_KEY";
 
     private static final String GEMINI_ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=";
 
