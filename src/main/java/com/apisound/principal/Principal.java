@@ -4,6 +4,7 @@ import com.apisound.model.Artista;
 import com.apisound.model.Musica;
 import com.apisound.model.TipoArtista;
 import com.apisound.repository.ArtistaRepository;
+import com.apisound.service.ConsultaGemini;
 
 import java.util.List;
 import java.util.Optional;
@@ -69,6 +70,11 @@ public class Principal {
     }
 
     private void pesquisarDadosDoArtista() {
+        System.out.println("Pesquisar dados sobre qual artista? ");
+        var nome = sc.nextLine();
+        Artista artista = artistaRepository.findByNome(nome).orElseThrow(() -> new RuntimeException("Artista não encontrado!"));
+        var resposta = ConsultaGemini.obterInformacao(artista);
+        System.out.println(resposta.trim());
     }
 
     private void buscarMusicasPorArtista() {
@@ -115,5 +121,8 @@ public class Principal {
             novoArtista = sc.nextLine();
         }
     }
+
+
+
 
 }
