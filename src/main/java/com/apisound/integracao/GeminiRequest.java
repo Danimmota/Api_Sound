@@ -1,4 +1,4 @@
-package com.apisound.model;
+package com.apisound.integracao;
 
 import java.util.List;
 

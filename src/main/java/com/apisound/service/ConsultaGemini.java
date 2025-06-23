@@ -1,8 +1,8 @@
 package com.apisound.service;
 
 import com.apisound.model.Artista;
-import com.apisound.model.GeminiRequest;
-import com.apisound.model.GeminiResponse;
+import com.apisound.integracao.GeminiRequest;
+import com.apisound.integracao.GeminiResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import java.net.URI;
