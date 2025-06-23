@@ -16,20 +16,12 @@ public class GeminiResponse {
         return candidates;
     }
 
-    public void setCandidates(List<Candidate> candidates) {
-        this.candidates = candidates;
-    }
-
     @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Candidate {
         private Content content;
 
         public Content getContent() {
             return content;
-        }
-
-        public void setContent(Content content) {
-            this.content = content;
         }
     }
 
@@ -40,10 +32,6 @@ public class GeminiResponse {
         public List<Part> getParts() {
             return parts;
         }
-
-        public void setParts(List<Part> parts) {
-            this.parts = parts;
-        }
     }
 
     @JsonIgnoreProperties(ignoreUnknown = true)
@@ -52,10 +40,6 @@ public class GeminiResponse {
 
         public String getText() {
             return text;
-        }
-
-        public void setText(String text) {
-            this.text = text;
         }
     }
 }
