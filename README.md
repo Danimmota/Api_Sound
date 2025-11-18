@@ -1,6 +1,6 @@
 # 🎵  API Sound
 
-Uma aplicação Java Spring Boot para buscar e armazenar informações sobre **diversos artistas** e suas músicas mais famosas. A aplicação integra inteligência artificial (Google Gemini) com persistência de dados em banco de dados PostgreSQL.
+Uma aplicação Java Spring Boot para buscar e armazenar informações sobre **diversos artistas** e suas músicas mais famosas. A aplicação integra Inteligência Artificial - Gemini com persistência de dados em banco de dados PostgreSQL.
 
 ## 🚀 Funcionalidades
 
